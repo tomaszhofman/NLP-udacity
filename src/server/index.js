@@ -28,6 +28,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:9020');
   res.send({ key: process.env.API_KEY });
 });
 
