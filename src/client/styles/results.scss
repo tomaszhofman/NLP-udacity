@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  justify-items: center; /* adjusted */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(253, 253, 253, 0.973);
+  box-shadow: 0 20px 40px -5px rgba(#1e58ff, 0.3);
+
+  width: 150px;
+  height: 120px;
+  border-radius: 12px;
+  padding: 12px 10px;
+
+  &__text {
+    font-size: 12px;
+    color: rgba(99, 99, 99, 0.973);
+    font-weight: 600;
+  }
+
+  &__subject {
+    font-size: 16px;
+  }
+}
